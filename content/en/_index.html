@@ -1,81 +1,118 @@
 +++
-title = "Goldydocs"
-linkTitle = "Goldydocs"
+title = "scioer"
+linkTitle = "scioer"
 
 +++
 
-{{< blocks/cover title="Welcome to Goldydocs: A Docsy Example Project!" image_anchor="top" height="full" color="orange" >}}
+
+{{< blocks/cover title="Welcome to scioer: An Open Education Resource Creation Tool!" image_anchor="top" height="full" color="orange" >}}
 <div class="mx-auto">
 	<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs" >}}">
 		Learn More <i class="fas fa-arrow-alt-circle-right ml-2"></i>
 	</a>
-	<a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/google/docsy-example">
-		Download <i class="fab fa-github ml-2 "></i>
+	<a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://pypi.org/project/sci-oer/">
+		Students <i class="fas fa-arrow-alt-circle-right ml-2 "></i>
 	</a>
-	<p class="lead mt-5">Porridge temperature assessment - in the cloud!</p>
+	<a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://pypi.org/project/scioer-builder/">
+		Instructors <i class="fas fa-arrow-alt-circle-right ml-2 "></i>
+	</a>
+	<p class="lead mt-5">Making open education resources easy to use for everyone!</p>
 	{{< blocks/link-down color="info" >}}
 </div>
 {{< /blocks/cover >}}
 
+{{% pageinfo %}}
+This site is still under construction.
+{{% /pageinfo %}}
+
 
 {{% blocks/lead color="primary" %}}
-Goldydocs provides a single web UI providing visibility into porridge temperature, chair size, and bed softness metrics! You can even find out who's been eating **your** porridge.
+This resource is part of an investigation into a semi-automated process for creating
+Self-Contained, Interactive Open Educational Resources (SCIOER) for use by students and instructors
+in the discipline of Computer Science.
 
-(Sadly, Goldydocs isn't a real project, but you can use this site as an example to create your own real websites with [Docsy](https://docsy.dev))
+Resources created through the SCIOER process are self-contained andprovide all the tools necessary for learners.
+
+The interactive nature of the resource encourages experimentation and incremental practice.
+Learners are able to annotate SCIOER resources with their personal observations and learnings.
 {{% /blocks/lead %}}
 
 {{< blocks/section color="dark" >}}
-{{% blocks/feature icon="fa-lightbulb" title="New chair metrics!" %}}
-The Goldydocs UI now shows chair size metrics by default.
+{{% blocks/feature icon="fa-solid fa-satellite-dish" title="Offline Access" %}}
+Everything you need is contained within the resource!
 
-Please follow this space for updates!
+No internet access required!
 {{% /blocks/feature %}}
 
 
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/google/docsy-example/pulls) contributions workflow on **GitHub**. New users are always welcome!
+{{% blocks/feature icon="fab fa-github" title="Contributions Welcome!" %}}
+We do a [Pull Request](https://github.com/sci-oer/student-cli/pulls) contributions workflow on **GitHub**. New users are always welcome!
 {{% /blocks/feature %}}
 
 
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/docsydocs" %}}
-For announcement of latest features etc.
+{{% blocks/feature icon="fa-solid fa-person-chalkboard" title="Create Custom Courses" url="https://github.com/sci-oer/automated-builder" %}}
+Purpose built to be easily extensible by instructors wishing to create their own open educational resource.
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fa-brands fa-docker" title="Docker Images" url="https://hub.docker.com/u/scioer" %}}
+Based on the industry standard containerization methods using Docker.
+
+We provide a suite of prebuilt images that can be used to create a range of easily attributable courses.
+{{% /blocks/feature %}}
+
+
+{{% blocks/feature icon="fa-solid fa-desktop" title="Cross Platform" %}}
+Designed to be compatible for Windows, MacOS, and linux!
+
+It even works on both Intel/AMD systems _and_ Apple Silicon!
+{{% /blocks/feature %}}
+
+
+{{% blocks/feature icon="fa-solid fa-face-smile" title="Student Satisfaction" %}}
+"10 out of 10. I love it because it's free, it's available offline and [it's] digital" - Second Year Guelph Student
 {{% /blocks/feature %}}
 
 
 {{< /blocks/section >}}
+
+
+{{% blocks/section  %}}
+
+### Funding
+
+This project is made possible with funding from the [University of Guelph OER support program] and
+the Government of Ontario and through [eCampusOntario's] support of the [Virtual Learning Strategy].
+To learn more about the Virtual Learning Strategy visit: https://vls.ecampusontario.ca.
+
+This project is supported through the [Docker] Open Source Software project.
+
+[University of Guelph OER support program]: https://www.lib.uoguelph.ca/using-library/faculty-instructors/open-educational-resources/open-educational-resources-support
+[eCampusOntario's]: https://ecampusontario.ca/
+[Virtual Learning Strategy]: https://vls.ecampusontario.ca/
+[Docker]: https://www.docker.com/
+
+{{% /blocks/section  %}}
+
 
 
 {{< blocks/section >}}
-<div class="col">
-<h1 class="text-center">This is the second Section</h1>
-</div>
+{{% blocks/feature icon="fa-solid fa-download" title="Download **from Dockerhub**" %}}
+All of our resources can be gotten from our public  [Dockerhub](https://hub.docker.com/u/scioer) project!
 
-{{< /blocks/section >}}
+{{% /blocks/feature %}}
 
-
-
-{{< blocks/section >}}
-{{% blocks/feature icon="fab fa-app-store-ios" title="Download **from AppStore**" %}}
-Get the Goldydocs app!
+{{% blocks/feature icon="fa-solid  fa-file-circle-plus" title="Create your own" url="https://github.com/sci-oer/base-resource" %}}
+Create your own custom resource by extending one of the base images.
 {{% /blocks/feature %}}
 
 
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/google/docsy-example/pulls) contributions workflow on **GitHub**. New users are always welcome!
-{{% /blocks/feature %}}
+{{% blocks/feature icon="fa-solid  fa-unlock" title="Open Source" url="https://www.gnu.org/licenses/agpl-3.0.en.html" %}}
+All of the resources, and tools that we have created are published under the [AGPLv3] license to ensure that they are
+open for anyone to use, modify, and contribute to.
 
-
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/GoHugoIO" %}}
-For announcement of latest features etc.
+[AGPLv3]: https://www.gnu.org/licenses/agpl-3.0.en.html
 {{% /blocks/feature %}}
 
 
 {{< /blocks/section >}}
 
-{{< blocks/section >}}
-
-<div class="col-12">
-<h1 class="text-center">This is another Section</h1>
-</div>
-
-{{< /blocks/section >}}
